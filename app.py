@@ -19,6 +19,7 @@ def hello():
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Email:</b> etsys@etsys.com<br/>" \
            "<b>Mobile:</b> 066910****<br/>" \
+           "<b>City:</b> Kyiv<br/>" \
            "<b>Visits:</b> {visits}"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 
